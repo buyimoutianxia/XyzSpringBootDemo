@@ -18,6 +18,7 @@
 <!--    指定包含的Module列表-->
     <modules>
         <module>datajdbcdemo</module>
+        <module>multidatasourcebyjdbcdemo</module>
     </modules>
 
     <properties>
