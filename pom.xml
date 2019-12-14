@@ -34,9 +34,9 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
-<!--            scope-->
+<!--            scope todo-->
             <scope>runtime</scope>
-<!--            optional-->
+<!--            optional todo -->
             <optional>true</optional>
         </dependency>
 
