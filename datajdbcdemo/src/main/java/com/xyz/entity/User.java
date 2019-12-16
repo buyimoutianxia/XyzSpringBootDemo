@@ -1,4 +1,4 @@
-package com.xyz.Entity;
+package com.xyz.entity;
 
 
 import org.springframework.beans.factory.annotation.Value;
