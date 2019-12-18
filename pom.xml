@@ -17,10 +17,10 @@
 
 <!--    指定包含的Module列表-->
     <modules>
-        <module>datajdbcdemo</module>
-        <module>multidatasourcebyjdbcdemo</module>
-        <module>mybatisdemo</module>
-        <module>multidatasourcebymybatis</module>
+        <module>01datajdbcdemo</module>
+        <module>02multidatasourcebyjdbcdemo</module>
+        <module>03mybatisdemo</module>
+        <module>04multidatasourcebymybatis</module>
     </modules>
 
     <properties>
