@@ -21,6 +21,7 @@
         <module>02multidatasourcebyjdbcdemo</module>
         <module>03mybatisdemo</module>
         <module>04multidatasourcebymybatis</module>
+        <module>05schedulerdemo</module>
     </modules>
 
     <properties>
