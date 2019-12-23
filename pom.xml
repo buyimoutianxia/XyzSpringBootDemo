@@ -23,6 +23,7 @@
         <module>04multidatasourcebymybatis</module>
         <module>05schedulerdemo</module>
         <module>06quartzdemo</module>
+        <module>07dRedisDemo</module>
     </modules>
 
     <properties>
