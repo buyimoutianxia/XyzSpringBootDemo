@@ -3,11 +3,13 @@ package com.xyz;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * Created by EalenXie on 2019/7/10 13:39.
+ */
 @SpringBootApplication
-public class QuartzdemoApplication {
+public class QuartzSimpleApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(QuartzdemoApplication.class, args);
+        SpringApplication.run(QuartzSimpleApplication.class, args);
     }
-
 }
