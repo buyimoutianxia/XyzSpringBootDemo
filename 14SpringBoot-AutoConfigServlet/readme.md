@@ -1,0 +1,11 @@
+## 配置SpringBoot支持自动装在Servlet
+
+### 方法1
+ServletConfiguration的配置类，并且添加一个@Bean的方法返回值为ServletRegistrationBean
+将TestServlet通过ServletRegistrationBean让SpringBoot项目知道它的存在，并且配置的请求路径为/test
+缺点：
+如果我们项目中存在多个Servlet的配置，每个需要去使用ServletRegistrationBean去配置
+
+### 方法2
+SpringBoot内部提供了注解@ServletComponentScan，这个注解的作用就是自动扫描我们SpringBoot项目内的有关Servlet配置，自动装配到我们的项目中
+类上添加@WebServlet注解，标识下该Servlet可以自动装配到项目中
