@@ -1,0 +1,19 @@
+<html   lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>title</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>ID</td>
+            <td>用户名</td>
+            <td>地址</td>
+        </tr>
+        <tr th:each="user: ${userlist}">
+            <td th:text="${user.id}"></td>
+            <td th:text="${user.name}"></td>
+            <td th:text="${user.address}"></td>
+        </tr>
+    </table>
+</body>
+</html>
