@@ -84,9 +84,11 @@ public class JobInterfaces {
                 .jobClass(SayHelloJobLogic.class)   //定时任务 的具体执行逻辑
                 .description("这是一个测试的 任务")    //定时任务 的描述
                 .build();
-        if (quartzJobService.modifyJobCron(modifyCronTask))
+        if (quartzJobService.modifyJobCron(modifyCronTask)) {
             return "modify HelloWorld Job Cron success";
-        else return "modify HelloWorld Job Cron fail";
+        } else {
+            return "modify HelloWorld Job Cron fail";
+        }
     }
 
 

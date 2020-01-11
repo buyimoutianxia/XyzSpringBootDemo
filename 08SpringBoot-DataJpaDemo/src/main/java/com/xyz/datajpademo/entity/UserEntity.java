@@ -15,7 +15,7 @@ public class UserEntity implements Serializable {
     private String userName;
 
     @Column(name = "address")
-    private String Address;
+    private String address;
 
     public long getId() {
         return id;
@@ -34,10 +34,10 @@ public class UserEntity implements Serializable {
     }
 
     public String getAddress() {
-        return Address;
+        return address;
     }
 
     public void setAddress(String address) {
-        Address = address;
+        address = address;
     }
 }

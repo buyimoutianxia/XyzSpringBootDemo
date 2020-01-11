@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class IndexController {
 
     @RequestMapping("/login_view")
-    public String login_view() {
+    public String login_View() {
         return "login";
     }
 

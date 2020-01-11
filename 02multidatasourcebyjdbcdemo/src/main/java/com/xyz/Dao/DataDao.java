@@ -23,8 +23,8 @@ public class DataDao {
         } catch (DataAccessException e) {
             e.printStackTrace();
         }finally {
-            return ret;
         }
+        return ret;
     }
 
     public int add2() {
@@ -34,7 +34,7 @@ public class DataDao {
         } catch (DataAccessException e) {
             e.printStackTrace();
         } finally {
-            return ret;
         }
+        return ret;
     }
 }

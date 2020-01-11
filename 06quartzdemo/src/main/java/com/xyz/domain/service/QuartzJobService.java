@@ -18,7 +18,9 @@ import java.util.Map;
 @Service
 public class QuartzJobService {
 
-    //Quartz定时任务核心的功能实现类
+    /**
+     *Quartz定时任务核心的功能实现类
+     */
     private Scheduler scheduler;
 
     public QuartzJobService(@Autowired SchedulerFactoryBean schedulerFactoryBean) {
@@ -79,7 +81,9 @@ public class QuartzJobService {
     public boolean modifyJobCron(TaskDefine define) {
         String cronExpression = define.getCronExpression();
         //1.如果cron表达式的格式不正确,则返回修改失败
-        if (!CronExpression.isValidExpression(cronExpression)) return false;
+        if (!CronExpression.isValidExpression(cronExpression)) {
+            return false;
+        }
         JobKey jobKey = define.getJobKey();
         TriggerKey triggerKey = new TriggerKey(jobKey.getName(), jobKey.getGroup());
         try {

@@ -6,6 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+/**
+ * @author 寒星月冷
+ */
 public class UserService {
 
     @Autowired
@@ -18,8 +21,8 @@ public class UserService {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            return ret;
         }
+        return ret;
     }
 
 }

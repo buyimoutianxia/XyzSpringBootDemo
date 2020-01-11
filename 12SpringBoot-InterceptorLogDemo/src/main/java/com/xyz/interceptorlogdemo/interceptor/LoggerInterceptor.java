@@ -46,6 +46,7 @@ public class LoggerInterceptor implements HandlerInterceptor {
                     @Nullable ModelAndView modelAndView) throws Exception {
     }
 
+    @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler,
                                 @Nullable Exception ex) throws Exception {
         //获取请求错误码
